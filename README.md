@@ -8,7 +8,7 @@ The hand score goes away too fast in vanilla, especially for big hands that incr
 
 1. Install [Steamodded](https://github.com/Steamodded/smods) and Lovely.
 2. Download `HoldForFinalHandScore-vX.Y.Z.zip` from the [Releases page](../../releases).
-3. Extract it and put the `HoldForFinalHandScore` folder in `%appdata%\Balatro\Mods`.
+3. Extract it and put the `HoldForFinalHandScore` folder in `%appdata%\Balatro\Mods`. (Or clone this repo straight into that folder.)
 
 ## What it does
 

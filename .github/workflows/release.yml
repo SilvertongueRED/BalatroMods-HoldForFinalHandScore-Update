@@ -15,9 +15,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          VERSION=$(jq -r .version HoldForFinalHandScore/HoldForFinalHandScore.json)
+          VERSION=$(jq -r .version HoldForFinalHandScore.json)
           ZIP="HoldForFinalHandScore-v${VERSION}.zip"
-          zip -r "$ZIP" HoldForFinalHandScore
+          mkdir -p stage/HoldForFinalHandScore
+          cp HoldForFinalHandScore.json main.lua config.lua stage/HoldForFinalHandScore/
+          (cd stage && zip -r "../$ZIP" HoldForFinalHandScore)
           if gh release view "v${VERSION}" >/dev/null 2>&1; then
             gh release upload "v${VERSION}" "$ZIP" --clobber
           else
