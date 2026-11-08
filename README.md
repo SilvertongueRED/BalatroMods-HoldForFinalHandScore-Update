@@ -21,3 +21,23 @@ The hand score goes away too fast in vanilla, especially for big hands that incr
 ## Credits
 
 Original mod by [Wiwiweb](https://github.com/Wiwiweb/BalatroMods). Updated by SilvertongueRED. See LICENSE.
+
+---
+
+<!-- other-mods:start -->
+## More from SilvertongueRED
+
+**Fit To Screen is now on Nexus Mods:** [nexusmods.com/balatro/mods/1001](https://www.nexusmods.com/balatro/mods/1001). It stops tall pause menus and sidebars from being cut off at the top and bottom of your screen.
+
+### See my other mods and forks
+
+- [Balatro-Fit-To-Screen](https://github.com/SilvertongueRED/Balatro-Fit-To-Screen) ([Nexus Mods](https://www.nexusmods.com/balatro/mods/1001))
+- [Balatro-Mod-Search-and-Sort](https://github.com/SilvertongueRED/Balatro-Mod-Search-and-Sort) ([Nexus Mods](https://www.nexusmods.com/balatro/mods/984))
+- [Balatro-Mod-Updater](https://github.com/SilvertongueRED/Balatro-Mod-Updater)
+- [Balatro-SaveRewinder-Config-Fix](https://github.com/SilvertongueRED/Balatro-SaveRewinder-Config-Fix)
+- [Trance-Active-and-Updated](https://github.com/SilvertongueRED/Trance-Active-and-Updated)
+- [Balatro-Preview-Accuracy-Update](https://github.com/SilvertongueRED/Balatro-Preview-Accuracy-Update)
+- [Main-Menu-Theme-Selector](https://github.com/SilvertongueRED/Main-Menu-Theme-Selector)
+- [Better Mouse and Gamepad (bmag)](https://github.com/SilvertongueRED/bmag)
+- [Balatro-Music-Selector-Fixes-and-Features](https://github.com/SilvertongueRED/Balatro-Music-Selector-Fixes-and-Features)
+<!-- other-mods:end -->
