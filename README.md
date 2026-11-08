@@ -36,3 +36,13 @@ Details:
 * Pauses for the final hand score before it gets added to the round score. It waits for the flames to die down, or if there are no flames, it waits 1 second.
 
 I quite like the dramatic reveal of the hand score as the flames goes down. I didn't do that on purpose but it's cool.
+
+#### Updated version (2.0.0)
+
+Install by copying the `HoldForFinalHandScore` folder into `%appdata%\Balatro\Mods`. Needs a current Steamodded and Lovely.
+
+* Uses the Steamodded JSON metadata format instead of the old header comment.
+* The final Chip X Mult pause is queued after the deck effect, so Plasma Deck's balancing is shown before the pause.
+* The deck effect results are passed through untouched, so Anaglyph and Plasma Deck work normally.
+* The hand score pause has a maximum wait and ignores NaN flame values, so naneinf scores no longer softlock the game.
+* Pause times and on/off toggles are in the mod's config tab.

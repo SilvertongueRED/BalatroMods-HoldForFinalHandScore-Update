@@ -1,0 +1,25 @@
+name: Release Hold For Final Hand Score
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build zip and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(jq -r .version HoldForFinalHandScore/HoldForFinalHandScore.json)
+          ZIP="HoldForFinalHandScore-v${VERSION}.zip"
+          zip -r "$ZIP" HoldForFinalHandScore
+          if gh release view "v${VERSION}" >/dev/null 2>&1; then
+            gh release upload "v${VERSION}" "$ZIP" --clobber
+          else
+            gh release create "v${VERSION}" "$ZIP" --target "${GITHUB_SHA}" --title "Hold For Final Hand Score v${VERSION}" --notes-file "release-notes/v${VERSION}.md"
+          fi
